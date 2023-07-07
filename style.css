@@ -1,0 +1,13 @@
+.gameBoard {
+	height: 2px;
+	width: 3px;
+	padding-bottom: 30px;
+	padding-left: 125px;
+	position: static;
+}
+
+#header {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 65px;
+	color: white;
