@@ -5,3 +5,12 @@ const modal = document.getElementById('modal');
 const close = document.getElementById('close');
 
 const hiddenWord = document.getElementById('hiddenWord');
+
+const wrongGuess = document.querySelectorAll('li');
+
+const resetBtn = document.querySelector('#resetBtn');
+
+const backgroundPic = document.querySelector('.gameBox');
+
+const winnerModal = document.getElementById('youWonModal');
+

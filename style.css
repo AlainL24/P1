@@ -1,0 +1,61 @@
+.gameBoard {
+	height: 2px;
+	width: 3px;
+	padding-bottom: 30px;
+	padding-left: 125px;
+	position: static;
+}
+
+#header {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 65px;
+	color: white;
+}
+
+#modal {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+#modal-textbox {
+	background-image: url('https://wallpaperaccess.com/full/31366.jpg');
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+	font-family: 'Arial';
+	color: white;
+}
+#modal-footer {
+	text-align: right;
+}
+#htpModal {
+	padding-bottom: 15px;
+}
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: #00e043;
+	border: none;
+	outline: none;
+	border-radius: 90px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+#lettersGuessed {
+	display: flex;
+	padding-left: 40px;
+	font-size: 25px;
+	font-family: 'Monoton', cursive;
+	color: white;
+}
