@@ -6,14 +6,17 @@
 	position: static;
 }
 
+#body {
+	background-image: url('red.jpg');
+}
+
 #header {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 65px;
 	color: white;
 }
-
 #modal {
 	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
@@ -25,9 +28,8 @@
 	overflow: auto;
 	display: none;
 }
-
 #modal-textbox {
-	background-image: url('https://earthsky.org/upl/2022/08/Milky-Way-Amr-Abdulwahab-western-desert-of-Egypt-July-8-2022-e1661981704464.jpg');
+	background-image: url('https://cdn.mos.cms.futurecdn.net/FGicVTjLV85SWuS8sJg3fJ.jpg');
 	height: 350px;
 	width: 550px;
 	border-radius: 2px;
@@ -38,18 +40,15 @@
 	font-family: 'Arial';
 	color: white;
 }
-
 #modal-footer {
 	text-align: right;
 }
-
 #htpModal {
 	padding-bottom: 15px;
 }
-
 .modal-buttons {
 	padding: 14px 18px;
-	background-color: #0400e0;
+	background-color: blue;
 	border: none;
 	outline: none;
 	border-radius: 90px;
@@ -57,18 +56,16 @@
 	font-family: 'Arial';
 	cursor: pointer;
 }
-
 #lettersGuessed {
 	display: flex;
 	padding-left: 40px;
 	font-size: 25px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: white;
 }
-
 #resetBtn {
 	padding: 14px 18px;
-	background-color: #0029e0;
+	background-color: blue;
 	border: none;
 	outline: none;
 	border-radius: 90px;
@@ -84,41 +81,38 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: bolder;
 	color: white;
 }
-
 .lettersGuessedArea {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 }
-
 .letter {
 	margin: 10px;
 }
 #wordPop {
 	text-align: center;
 }
-
 #background {
-	background: url("https://earthsky.org/upl/2022/08/Milky-Way-Amr-Abdulwahab-western-desert-of-Egypt-July-8-2022-e1661981704464.jpg");
+	background: url("red.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
+
 #wrongGuess7 {
 	visibility: hidden;
 }
 
 #close {
-	background: mediumaquamarine;
+	background: blue;
 	color: black;
 }
-
 #youWonModal {
 	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
@@ -130,7 +124,18 @@
 	overflow: auto;
 	display: none;
 }
-
+#modal_textboxForWinning {
+	background-image: url('eclipse.jpg');
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	color: white;
+}
 .closeWinningModal {
 	color: white;
+}
+.correctGuess {
+  color: blue;
 }
