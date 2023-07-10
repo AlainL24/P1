@@ -95,4 +95,39 @@ function playerGuess(event) {
 
 	let blankSpaces = document.querySelectorAll('.letter');
 	clearButton();
-	
+
+
+	if (userInput === randomWordChoiceLetters[0]) {
+		blankSpaces[0].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[1]) {
+		blankSpaces[1].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[2]) {
+		blankSpaces[2].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[3]) {
+		blankSpaces[3].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[4]) {
+		blankSpaces[4].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[5]) {
+		blankSpaces[5].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[6]) {
+		blankSpaces[6].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[7]) {
+		blankSpaces[7].innerText = userInput;
+		userGuesses.push(userInput);
+	} else if (userInput === randomWordChoiceLetters[8]) {
+		blankSpaces[8].innerText = userInput;
+		userGuesses.push(userInput);
+	} else {
+		wrongGuess[numberOfWrongGuesses].innerText = userInput;
+		numberOfWrongGuesses++;
+		updatePic();
+	}
+	checkWin();
+}
