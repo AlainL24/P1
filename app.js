@@ -131,3 +131,38 @@ function playerGuess(event) {
 	}
 	checkWin();
 }
+
+enterBtn.addEventListener('click', playerGuess);  
+
+function resetGame() {
+	numberOfWrongGuesses = 0;
+	wrongGuess.forEach((li) => (li.innerText = ' '));
+	backgroundPic.src = '0 bckgd.jpg';
+	randomWordChoice = wordBank[Math.floor(Math.random() * wordBank.length)];
+	newWordGenerator();
+	userGuesses = [];
+}
+
+function updatePic() {
+	if (numberOfWrongGuesses == 1) {
+		backgroundPic.src = '1.jpg';
+	} else if (numberOfWrongGuesses == 2) {
+		backgroundPic.src = '2.jpg';
+	} else if (numberOfWrongGuesses == 3) {
+		backgroundPic.src = '3.jpg';
+	} else if (numberOfWrongGuesses == 4) {
+		backgroundPic.src = '4.jpg';
+	} else if (numberOfWrongGuesses == 5) {
+		backgroundPic.src = '5.jpg';
+	} else if (numberOfWrongGuesses == 6) {
+		backgroundPic.src = '6.jpg';
+	} else if (numberOfWrongGuesses == 7) {
+		alert(
+    	'You have failed to rescue the spaceman. All hope is not lost, Click the start/restart button to try again'
+);
+	}
+}
+
+function clearButton() {
+	document.getElementById('myInput').value = '';
+}
