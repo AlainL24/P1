@@ -65,3 +65,17 @@
 	font-family: 'Roboto', sans-serif;
 	color: white;
 }
+
+#resetBtn {
+	padding: 14px 18px;
+	background-color: #0029e0;
+	border: none;
+	outline: none;
+	border-radius: 90px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+	margin-top: 45px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
