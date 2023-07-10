@@ -95,3 +95,18 @@
 	align-items: flex-end;
 	justify-content: center;
 }
+
+.letter {
+	margin: 10px;
+}
+#wordPop {
+	text-align: center;
+}
+
+#background {
+	background: url("https://earthsky.org/upl/2022/08/Milky-Way-Amr-Abdulwahab-western-desert-of-Egypt-July-8-2022-e1661981704464.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
