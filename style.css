@@ -110,7 +110,7 @@
 }
 
 #close {
-	background: blue;
+	background: mediumaquamarine;
 	color: black;
 }
 #youWonModal {
@@ -125,6 +125,7 @@
 	display: none;
 }
 #modal_textboxForWinning {
+	background-image: url('https://64.media.tumblr.com/c204a012909fbedcfe42b4f5c2e74cb6/tumblr_oumrc9ua2l1qeyvpto2_r1_500.gifv');
 	height: 350px;
 	width: 550px;
 	border-radius: 2px;
