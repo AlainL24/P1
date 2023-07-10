@@ -84,3 +84,5 @@ newWordGenerator();
 
 let enterBtn = document.querySelector('#enterGuess');
 
+let numberOfWrongGuesses = 0;
+
