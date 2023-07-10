@@ -21,3 +21,19 @@ let userGuesses = [];
 const openModal = () => {
 	modal.style.display = 'block';
 };
+
+const closeModal = () => {
+	modal.style.display = 'none';
+};
+
+const closeWinningModal = () => {
+	winnerModal.style.display = 'none';
+};
+
+closeWinningMod.addEventListener('click', closeWinningModal);
+
+openBtn.addEventListener('click', openModal);
+
+close.addEventListener('click', closeModal);
+
+resetBtn.addEventListener('click', resetGame);
