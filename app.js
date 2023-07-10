@@ -82,3 +82,5 @@ function checkWin() {
 
 newWordGenerator();
 
+let enterBtn = document.querySelector('#enterGuess');
+
