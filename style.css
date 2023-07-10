@@ -110,3 +110,12 @@
 	-o-background-size: cover;
 	background-size: cover;
 }
+#wrongGuess7 {
+	visibility: hidden;
+}
+
+#close {
+	background: mediumaquamarine;
+	color: black;
+}
+
