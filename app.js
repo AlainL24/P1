@@ -86,3 +86,6 @@ let enterBtn = document.querySelector('#enterGuess');
 
 let numberOfWrongGuesses = 0;
 
+function playerGuess(event) {
+	event.preventDefault();
+	
