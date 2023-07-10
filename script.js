@@ -55,12 +55,12 @@ let wordBank = [
 	'BREATH',
 	'SOLID',
 	'LUNCH',
-	'PIZZA',
+	'WRAP',
 	'COZY',
 	'CLONE',
 	'FROZEN',
-	"APPLE",
-	"CHERRY",
+	"PEAR",
+	"ORANGE",
 ];
 
 let randomWordChoice = wordBank[Math.floor(Math.random() * wordBank.length)];
