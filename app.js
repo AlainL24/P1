@@ -37,3 +37,48 @@ openBtn.addEventListener('click', openModal);
 close.addEventListener('click', closeModal);
 
 resetBtn.addEventListener('click', resetGame);
+
+let wordBank = [
+	'VENUS',
+	'EARTH',
+	'MARS',
+	'OXYGEN',
+	'SPACE',
+	'NASA',
+	'BREATH',
+	'SOLID',
+	'LUNCH',
+	'PIZZA',
+	'COZY',
+	'CLONE',
+	'FROZEN',
+	"APPLE",
+	"CHERRY",
+];
+
+let randomWordChoice = wordBank[Math.floor(Math.random() * wordBank.length)];
+
+function newWordGenerator() {
+	wordPop.innerHTML = '';
+	for (let i = 0; i < randomWordChoice.length; i++) {
+		letter = document.createElement('span');
+		letter.innerText = '_____';
+		letter.style.color = 'chartreuse';
+		letter.classList.add('letter');
+		wordPop.appendChild(letter);
+	}
+}
+
+
+function winningAlert() {
+	winnerModal.style.display = 'block';
+}
+
+function checkWin() {
+	if (userGuesses.length === randomWordChoice.length) {
+		return winningAlert();
+	}
+}
+
+newWordGenerator();
+
