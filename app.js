@@ -88,4 +88,11 @@ let numberOfWrongGuesses = 0;
 
 function playerGuess(event) {
 	event.preventDefault();
+
+	let randomWordChoiceLetters = randomWordChoice.split('');
+
+	let userInput = document.querySelector('.input').value.toUpperCase();
+
+	let blankSpaces = document.querySelectorAll('.letter');
+	clearButton();
 	
